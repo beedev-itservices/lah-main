@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {box-sizing: border-box;}
+
+html, body {height: 100%;}
+
+// Variables
+
+@brown: #7e685a;
+@white: white;
+@border: 4px groove @brown;
+@1175: ~"only screen and (max-width: 1175px)";
+@975: ~"only screen and (max-width: 975px)";
+@730: ~"only screen and (max-width: 730px)";
+@400: ~"only screen and (max-width: 400px)";
+
+// Mixins
+
+.flexrow {display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+.flexcolumn {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+// Basic Styles
+
+.center {margin: auto;}
+
+// Main Styles
+
+header {.flexcolumn();
+    justify-content: space-around;
+    position: fixed;
+    overflow: hidden;
+    top: 5px;
+    z-index: 10;
+    background: @white;
+    padding: 5px;
+    width: 100%;
+
+    nav {.flexrow();
+        justify-content: space-around;
+        padding: .25em 1em .25em 1em;
+        width: 100%;
+        background: @brown;
+
+        a {padding: 1em;
+            color: white;
+        
+            &:link {text-decoration: none;}
+            &:visited {text-decoration: none;}
+            &:hover {text-decoration: underline;
+                color: black;
+                font-weight: bold;}
+        }
+    }
+}
+
+
+
+@media @730 {
+    header {z-index: 8;
+
+        img {width: 30em;}
+    }
+}
+
+@media @400 {
+    header {z-index: 7;
+    
+        img {width: 20em;}
+    
+        nav {flex-wrap: wrap;}
+    }
+}
+
+.main {.flexcolumn();
+    position: relative;
+    margin: 16em 1em 2em 1em;
+    border: @border;
+    border-radius: 20%;
+
+    .heading {.flexcolumn();
+        padding: 1em;
+
+        h1 {font-size: 3em;
+            justify-content: flex-start;}
+    }
+
+    .content {.flexrow();
+        justify-content: space-around;
+
+        .mobile {display: none;}
+    
+        p {width: 14em;
+            line-height: 2;
+            font-size: 1.2em;
+            padding: 1em;
+
+        }
+        .homeimgs {position: relative;
+            top: 90px;
+            padding: 0 2em 0 0;
+            margin: 0 8em 0 0;
+            width: 30em;
+            height: 40em;} 
+    }
+}
+
+@media @1175 {
+    .main {border-radius: 18%;
+
+        .content {
+            justify-content: space-evenly;
+
+            p {width: 10em;}
+
+           .homeimgs {width: 20em;
+                padding: 0;
+                margin: 0;
+                img {width: 20em;}
+            }
+        } 
+    }
+}
+
+@media @975 {
+    .main {border-radius: 15%;
+    
+        .heading {padding: 1em;
+            h1 {font-size: 2.5em;}
+        }
+    }
+}
+
+@media @730 {
+    .main {border-radius: 5%;
+        
+        .content {.flexcolumn();
+
+            .mobile {display: block;}
+
+            p {display: none;}
+        }    
+    }
+}
+
+@media @400 {
+    .main {margin: 20em 1em 2em 1em;}
+}
+
+.footer {.flexcolumn();
+}
