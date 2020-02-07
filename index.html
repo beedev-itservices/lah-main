@@ -1,72 +1,72 @@
-<!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>LAH Photography</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/core.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
-<!-- Header -->
-			<div id="header">
-<!-- Logo -->
-				<a href="index.html" id="logo"><img src="images/logo.jpg"></a>
-<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="http://gallery.lah-photography.com/main.html">Photo Gallery</a></li>
-							<li><a href="http://archive.lah-photography.com/main.html">Archive Photo Gallery</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="news.html">News & Special</a></li>
-							<li><a href="terms.html">Terms & Conditions</a></li>
-						</ul>
-					</nav>
-			</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/core.css">
+    <title>LAH Photography</title>
+    <style>
+        .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+      <header class="center">
+        <img src="images/logo.jpg" class="logo">
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="news.html">News & Specials</a>
+            <a href="http://gallery.lah-photography.com">Gallery</a>
+            <a href="http://archive.lah-photography.com">Archives</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </nav>
+      </header>
+      <div class="main center">
+        <div class="heading">
+            <h1>Welcome to LAH Photography</h1>
+        </div>
+        <div class="content">
+          <div class="mobile center">Take a look around.  Let us know what you think</div>
+            <p>Take a look around. <br><br><br>
+                
+                Find last years and this years photos in the gallery and anything over 2 years old can be found in the archive section. 
+            </p>
+            <div class="homeimgs center">
+                <img class="mySlides center" src="images/pole.jpg">
+                <img class="mySlides center" src="images/girl.jpg">
+                <img class="mySlides center" src="images/wedding.jpg">
+                <img class="mySlides center" src="images/newmom.jpg">
+                <img class="mySlides center" src="images/family.jpg">
+                <img class="mySlides center" src="images/couple.jpg">
+                <img class="mySlides center" src="images/pregnancy.jpg">
+              </div>
+              <p>Head to the Contact page to request a session of find our Facebook link.</p>
+        </div>
+    </div>
 
-<!-- Banner -->
+    <div class="footer center">
+        <p>(c) Copyright 2020</p>
+        <a href="mailto:"">Webmaster</a>
+    </div>
 
-<!-- Highlights -->
+    
+   
+    <script>
+        var myIndex = 0;
+    carousel();
 
-<!-- Gigantic Heading -->
-
-<!-- Posts -->
-
-<!-- CTA -->
-
-<!-- Footer -->
-				<div id="footer">
-				
-
-<!-- Icons -->
-
-<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; LAH Photography. All rights reserved</li>
-								<li><a href="mailto:webmaster@lah-photography.com">Webmaster</a></li>
-							</ul>
-						</div>
-
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.dropotron.min.js"></script>
-			<script src="js/browser.min.js"></script>
-			<script src="js/breakpoints.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
-
-	</body>
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+    </script>
+  </body>
 </html>
