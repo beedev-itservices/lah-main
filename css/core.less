@@ -78,6 +78,8 @@ html, body {height: 100%;}
 
 // Main Styles
 
+// Header and Navigation
+
 header {.flexcolumn();
     justify-content: space-around;
     position: fixed;
@@ -106,8 +108,6 @@ header {.flexcolumn();
     }
 }
 
-
-
 @media @730 {
     header {z-index: 8;
 
@@ -124,6 +124,8 @@ header {.flexcolumn();
     }
 }
 
+// Main Container
+
 .main {.flexcolumn();
     position: relative;
     margin: 16em 1em 2em 1em;
@@ -135,6 +137,8 @@ header {.flexcolumn();
 
         h1 {font-size: 3em;
             justify-content: flex-start;}
+
+        h2 {font-size: 2.25em;}
     }
 
     .content {.flexrow();
@@ -142,7 +146,7 @@ header {.flexcolumn();
 
         .mobile {display: none;}
     
-        p {width: 14em;
+        .p {width: 14em;
             line-height: 2;
             font-size: 1.2em;
             padding: 1em;
@@ -154,22 +158,36 @@ header {.flexcolumn();
             margin: 0 8em 0 0;
             width: 30em;
             height: 40em;} 
+        
+        .aboutimg {margin: 0 4em 0 4em;
+            align-self: flex-start;}
+
+        .aboutp {.flexcolumn();
+            align-self: flex-start;
+            width: 30em;
+            height: 40em;
+            font-size: 1.15em;
+            line-height: 1.5;
+        }
     }
 }
 
 @media @1175 {
     .main {border-radius: 18%;
 
-        .content {
-            justify-content: space-evenly;
+        .content {justify-content: space-evenly;
 
-            p {width: 10em;}
+            .p {width: 10em;}
 
            .homeimgs {width: 20em;
                 padding: 0;
                 margin: 0;
+
                 img {width: 20em;}
             }
+
+            .aboutp {width: 20em;
+                font-size: 1em;}
         } 
     }
 }
@@ -179,6 +197,13 @@ header {.flexcolumn();
     
         .heading {padding: 1em;
             h1 {font-size: 2.5em;}
+        }
+
+        .content {justify-content: space-evenly;
+           
+            .aboutimg {margin: 0 2em 0 2em;
+                width: 15em;}
+            .aboutp {height: 50em;}  
         }
     }
 }
@@ -190,7 +215,9 @@ header {.flexcolumn();
 
             .mobile {display: block;}
 
-            p {display: none;}
+            .p {display: none;}
+
+            .aboutp {height: 37em;}
         }    
     }
 }
@@ -198,6 +225,8 @@ header {.flexcolumn();
 @media @400 {
     .main {margin: 20em 1em 2em 1em;}
 }
+
+// Footer
 
 .footer {.flexcolumn();
 }
