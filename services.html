@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/minilogo.png">
+    <title>Services - LAH Photography</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+<!--Header & Navigation-->
+      <header class="center">
+        <img src="images/logo.jpg" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="news.html">News & Specials</a>
+            <a href="services.html">Services</a>
+            <a href="http://gallery.lah-photography.com">Gallery</a>
+            <a href="http://archive.lah-photography.com">Archives</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </nav>
+      </header>
+<!--Main container-->
+      <div class="main center">
+        <div class="heading">
+            <h1>Services</h1>
+            <h3>Also check out our <a href="https://www.facebook.com/pg/lahphoto570/services/?ref=page_internal">FaceBook page</a> for full service descriptions</h3>
+        </div>
+        <div class="content">
+           <div class="services">
+               <b>Maternity Packages:</b><br>
+               <b># 1:</b>
+                <ul>
+                    <li>4 hours and up • $175</li>
+                    <li>On Location or In Studio</li>
+                    <li>Baby's 1st photo</li>
+                </ul>
+                <b># 2:</b>
+                <ul>
+                    <li>4 hours and up • $225</li>
+                    <li>Announcement Shoot</li>
+                    <li>On Location or In Studio</li>
+                    <li>Baby's 1st photo</li>
+                </ul>
+                <b># 3:</b>
+                <ul>
+                    <li>6 hours • $275</li>
+                    <li>Announcement Shoot</li>
+                    <li>On Location or In Studio</li>
+                    <li>The First 48hr Shoot</li>
+                    <li>Baby's 1st photo</li>
+                </ul>
+           </div>
+
+           <div class="services">
+            <b>Maternity Packages:</b><br>
+            <b># 1:</b>
+             <ul>
+                 <li>4 hours and up • $175</li>
+                 <li>On Location or In Studio</li>
+                 <li>Baby's 1st photo</li>
+             </ul>
+             <b># 2:</b>
+             <ul>
+                 <li>4 hours and up • $225</li>
+                 <li>Announcement Shoot</li>
+                 <li>On Location or In Studio</li>
+                 <li>Baby's 1st photo</li>
+             </ul>
+             <b># 3:</b>
+             <ul>
+                 <li>6 hours • $275</li>
+                 <li>Announcement Shoot</li>
+                 <li>On Location or In Studio</li>
+                 <li>The First 48hr Shoot</li>
+                 <li>Baby's 1st photo</li>
+             </ul>
+        </div>
+ 
+        </div>
+    </div>
+<!--Footer-->
+    <div class="footer center">
+        <p>(c) Copyright 2020</p>
+        <a href="mailto:webmaster@lah-photography.com">Webmaster</a>
+    </div>
+
+    
+   
+    <script>
+        var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+    </script>
+  </body>
+</html>
