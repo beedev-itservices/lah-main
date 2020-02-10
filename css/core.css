@@ -347,6 +347,29 @@ header nav a:hover {
   font-size: 1.2em;
   font-weight: bold;
 }
+.main .content .terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main .content .terms p {
+  margin: 1em;
+  font-size: 1.2em;
+  width: 40em;
+}
+.main .content .terms p b {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.main .content .terms ol {
+  list-style-type: upper-alpha;
+  font-size: 1.3em;
+  margin: 1em;
+}
 @media only screen and (max-width: 1175px) {
   .main {
     border-radius: 18%;
@@ -381,6 +404,15 @@ header nav a:hover {
   }
   .main .content .specials img {
     width: 25rem;
+  }
+  .main .content .terms {
+    margin: auto;
+  }
+  .main .content .terms p {
+    width: 25em;
+  }
+  .main .content .terms ol {
+    width: 25em;
   }
 }
 @media only screen and (max-width: 975px) {
@@ -451,10 +483,28 @@ header nav a:hover {
   .main .content .specials img {
     width: 21rem;
   }
+  .main .content .terms p {
+    width: 15em;
+  }
+  .main .content .terms ol {
+    width: 15em;
+  }
 }
 @media only screen and (max-width: 400px) {
   .main {
     margin: 20em 1em 2em 1em;
+  }
+  .main .content {
+    justify-content: inherit;
+  }
+  .main .content .terms {
+    margin: auto;
+  }
+  .main .content .terms p {
+    width: 10em;
+  }
+  .main .content .terms ol {
+    width: 10em;
   }
 }
 .footer {
