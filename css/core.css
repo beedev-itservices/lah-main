@@ -307,16 +307,25 @@ header nav a:hover {
 .main .content .specials img {
   width: 30rem;
 }
-.main .content .services {
-  margin: 1em;
+.main .content .services-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
 }
-.main .content .services b {
+.main .content .services-content .services {
+  margin: 1.5em;
+  align-self: flex-start;
+  width: 15em;
+}
+.main .content .services-content .services b {
   font-size: 1.4em;
   font-weight: bold;
   margin: 0.5em;
   line-height: 1.2;
 }
-.main .content .services ul {
+.main .content .services-content .services ul {
   list-style-type: circle;
   font-size: 1.3em;
   margin: 1em;

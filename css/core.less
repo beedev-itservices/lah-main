@@ -201,16 +201,23 @@ header {.flexcolumn();
             img {width: 30rem;}
         }
 
-        .services {margin: 1em;
+        .services-content {.flexrow();
+            flex-wrap: wrap;
+            margin: auto;
+        
+            .services {margin: 1.5em;
+                align-self: flex-start;
+                width: 15em;
             
-            b {font-size: 1.4em;
-                font-weight: bold; 
-                margin: .5em;
-                line-height: 1.2;}
-
-            ul {list-style-type: circle;
-                font-size: 1.3em;
-                margin: 1em;}
+                b {font-size: 1.4em;
+                    font-weight: bold; 
+                    margin: .5em;
+                    line-height: 1.2;}
+    
+                ul {list-style-type: circle;
+                    font-size: 1.3em;
+                    margin: 1em;}
+            }
         }
     }
 }
