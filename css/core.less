@@ -219,6 +219,37 @@ header {.flexcolumn();
                     margin: 1em;}
             }
         }
+
+        .contact {.flexcolumn();
+            margin: 2em;
+            align-items: flex-start;
+            justify-content: flex-start;
+        
+            p {margin: 1em;
+                font-size: 1.2em;
+            
+                b {font-size: 1.2em;
+                    font-weight: bold;}
+            }
+        }
+
+        .terms {.flexcolumn();
+            margin: 2em;
+            align-items: flex-start;
+            justify-content: flex-start;
+        
+            p {margin: 1em;
+                font-size: 1.2em;
+                width: 40em;
+            
+                b {font-size: 1.2em;
+                    font-weight: bold;}
+            }
+
+            ol {list-style-type: upper-alpha;
+                font-size: 1.3em;
+                margin: 1em;}
+        }
     }
 }
 
@@ -248,6 +279,13 @@ header {.flexcolumn();
             .specials {margin: 1.3em;
             
                 img {width: 25rem;}
+            }
+
+            .terms {margin: auto;
+            
+                p {width: 25em;}
+
+                ol {width: 25em;}
             }
         } 
     }
@@ -303,12 +341,30 @@ header {.flexcolumn();
 
                 img {width: 21rem;}
             }
+
+            .terms {
+
+                p {width: 15em;}
+
+                ol {width: 15em;}
+            }
         }    
     }
 }
 
 @media @400 {
-    .main {margin: 20em 1em 2em 1em;}
+    .main {margin: 20em 1em 2em 1em;
+    
+        .content {justify-content: inherit;
+
+            .terms {margin: auto;
+
+                p {width: 10em;}
+
+                ol {width: 10em;}
+            }
+        }
+    }
 }
 
 // Footer
