@@ -144,6 +144,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flexcolumnalt {
+  display: flex;
+  flex-direction: column;
+}
 .center {
   margin: auto;
 }
@@ -262,11 +266,9 @@ header nav a:hover {
 .main .content .aboutp {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 4em 1em 0;
   align-self: flex-start;
   width: 30em;
-  height: 40em;
   font-size: 1.15em;
   line-height: 1.5;
 }
