@@ -266,6 +266,20 @@ header nav a:visited {
   font-size: 1.1em;
   padding: 1em 0.5em;
 }
+.main .content .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .contact p {
+  font-size: 1.1em;
+  padding: 1em 0.5em;
+  align-self: flex-start;
+}
+.main .content .contact p b {
+  font-weight: bold;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -304,6 +318,9 @@ header nav a:visited {
   }
   .main .content .aboutimg {
     width: auto;
+  }
+  .main .content .contact p {
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -392,10 +409,5 @@ header nav a:visited {
   }
   .main .about .aboutp {
     width: 60em;
-  }
-}
-@media only screen and (min-width: 1650px) {
-  header nav a {
-    padding: 14px 45px;
   }
 }
