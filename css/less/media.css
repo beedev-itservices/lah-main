@@ -32,6 +32,9 @@
   .main .content .aboutp p {
     font-size: 1.4em;
   }
+  .main .content .specials img {
+    width: 22em;
+  }
 }
 @media only screen and (min-width: 530px) {
   header img {
@@ -48,6 +51,9 @@
   }
   .main .content .contact p {
     font-size: 1.5em;
+  }
+  .main .content .specials img {
+    width: 30em;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -83,6 +89,9 @@
   .main .content .aboutp {
     width: 40em;
   }
+  .main .content .specials img {
+    width: 40em;
+  }
 }
 @media only screen and (min-width: 850px) {
   header nav {
@@ -115,6 +124,32 @@
     align-items: center;
     width: 20em;
   }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 30em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 28em;
+    padding-bottom: 1em;
+  }
 }
 @media only screen and (min-width: 1000px) {
   header img {
@@ -125,6 +160,32 @@
   }
   .main .about .aboutp {
     width: 40em;
+  }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 40em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 35em;
+    padding-bottom: 1em;
   }
 }
 @media only screen and (min-width: 1330px) {

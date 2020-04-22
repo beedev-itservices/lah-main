@@ -280,6 +280,35 @@ header nav a:visited {
 .main .content .contact p b {
   font-weight: bold;
 }
+.main .content .news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .news p {
+  font-size: 1.1em;
+  padding: 1em 0.5em;
+}
+.main .content .news p b {
+  font-weight: bold;
+}
+.main .content .specials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .specials p {
+  font-size: 1.4em;
+  padding: 0.5em;
+}
+.main .content .specials p b {
+  font-weight: bold;
+}
+.main .content .specials img {
+  width: 15em;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -305,6 +334,9 @@ header nav a:visited {
   .main .content .aboutp p {
     font-size: 1.4em;
   }
+  .main .content .specials img {
+    width: 22em;
+  }
 }
 @media only screen and (min-width: 530px) {
   header img {
@@ -321,6 +353,9 @@ header nav a:visited {
   }
   .main .content .contact p {
     font-size: 1.5em;
+  }
+  .main .content .specials img {
+    width: 30em;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -356,6 +391,9 @@ header nav a:visited {
   .main .content .aboutp {
     width: 40em;
   }
+  .main .content .specials img {
+    width: 40em;
+  }
 }
 @media only screen and (min-width: 850px) {
   header nav {
@@ -388,6 +426,32 @@ header nav a:visited {
     align-items: center;
     width: 20em;
   }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 30em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 28em;
+    padding-bottom: 1em;
+  }
 }
 @media only screen and (min-width: 1000px) {
   header img {
@@ -398,6 +462,32 @@ header nav a:visited {
   }
   .main .about .aboutp {
     width: 40em;
+  }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 40em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 35em;
+    padding-bottom: 1em;
   }
 }
 @media only screen and (min-width: 1330px) {
