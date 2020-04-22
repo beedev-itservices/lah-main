@@ -98,7 +98,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {background-image: linear-gradient(to bottom right, grey, purple, grey);}
+	body {background-image: linear-gradient(to bottom right, #a9a9a9, #d49fb3, #a9a9a9);}
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {

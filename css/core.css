@@ -152,61 +152,54 @@ body {
   margin: auto;
 }
 header {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  position: fixed;
-  overflow: hidden;
-  top: 5px;
-  z-index: 10;
-  background: white;
-  padding: 5px;
-  width: 100%;
+}
+header img {
+  width: 13em;
+  justify-content: center;
+  align-self: center;
 }
 header nav {
+  background-color: #d49fb3;
+  width: 95%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 0.25em 1em 0.25em 1em;
-  width: 100%;
-  background: #7e685a;
+}
+header nav #myLinks {
+  display: none;
+}
+header nav #desktop {
+  display: none;
 }
 header nav a {
-  padding: 1em;
-  color: white;
-}
-header nav a:link {
+  color: #121212;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+header nav a .icon {
+  background: #d49fb3;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header nav a:hover {
+  background-color: #121212;
+  color: #fff;
+  font-weight: bold;
 }
 header nav a:visited {
   text-decoration: none;
-}
-header nav a:hover {
-  text-decoration: underline;
-  color: black;
-  font-weight: bold;
-}
-@media only screen and (max-width: 730px) {
-  header {
-    z-index: 8;
-  }
-  header img {
-    width: 30em;
-  }
-}
-@media only screen and (max-width: 400px) {
-  header {
-    z-index: 7;
-  }
-  header img {
-    width: 20em;
-  }
-  header nav {
-    flex-wrap: wrap;
-  }
 }
 .main {
   display: flex;
@@ -214,9 +207,9 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 16em 1em 2em 1em;
-  border: 4px groove #7e685a;
-  border-radius: 20%;
+  margin: 1em 0.5em 2em 0.5em;
+  border: 4px groove #d49fb3;
+  border-radius: 5%;
 }
 .main .heading {
   display: flex;
@@ -226,8 +219,9 @@ header nav a:hover {
   padding: 1em;
 }
 .main .heading h1 {
-  font-size: 3em;
-  justify-content: flex-start;
+  font-size: 2.5em;
+  justify-content: center;
+  text-align: center;
 }
 .main .heading h2 {
   font-size: 2.25em;
@@ -235,283 +229,173 @@ header nav a:hover {
 .main .heading h3 {
   font-size: 1.5em;
   margin: 0.5em;
+  text-align: center;
 }
 .main .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-}
-.main .content .mobile {
-  display: none;
 }
 .main .content .p {
-  width: 14em;
-  line-height: 2;
-  font-size: 1.2em;
-  padding: 1em;
+  display: none;
+}
+.main .content .mobile {
+  width: 200px;
+  text-align: center;
 }
 .main .content .homeimgs {
-  position: relative;
-  top: 90px;
-  padding: 0 2em 0 0;
-  margin: 0 8em 0 0;
-  width: 30em;
-  height: 40em;
+  width: 15em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+.main .content .homeimgs img {
+  width: 13em;
+  border-radius: 10%;
 }
 .main .content .aboutimg {
-  margin: 0 4em 0 4em;
-  align-self: flex-start;
+  width: 13em;
 }
 .main .content .aboutp {
   display: flex;
   flex-direction: column;
-  margin: 0 4em 1em 0;
-  align-self: flex-start;
-  width: 30em;
-  font-size: 1.15em;
-  line-height: 1.5;
-}
-.main .content .news {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
-.main .content .news p {
-  width: 20em;
-  margin: 2em;
-  font-size: 1.2em;
-}
-.main .content .news p b {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-.main .content .specials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
-.main .content .specials p {
-  width: 20em;
-  margin: 2em;
-  font-size: 1.2em;
-}
-.main .content .specials p b {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-.main .content .specials img {
-  width: 30rem;
-}
-.main .content .services-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-}
-.main .content .services-content .services {
-  margin: 1.5em;
-  align-self: flex-start;
-  width: 15em;
-}
-.main .content .services-content .services b {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin: 0.5em;
-  line-height: 1.2;
-}
-.main .content .services-content .services ul {
-  list-style-type: circle;
-  font-size: 1.3em;
-  margin: 1em;
-}
-.main .content .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.main .content .contact p {
-  margin: 1em;
-  font-size: 1.2em;
-}
-.main .content .contact p b {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.main .content .terms {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.main .content .terms p {
-  margin: 1em;
-  font-size: 1.2em;
-  width: 40em;
-}
-.main .content .terms p b {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.main .content .terms ol {
-  list-style-type: upper-alpha;
-  font-size: 1.3em;
-  margin: 1em;
-}
-@media only screen and (max-width: 1175px) {
-  .main {
-    border-radius: 18%;
-  }
-  .main .content {
-    justify-content: space-evenly;
-  }
-  .main .content .p {
-    width: 10em;
-  }
-  .main .content .homeimgs {
-    width: 20em;
-    padding: 0;
-    margin: 0;
-  }
-  .main .content .homeimgs img {
-    width: 20em;
-  }
-  .main .content .aboutp {
-    width: 20em;
-    font-size: 1em;
-  }
-  .main .content .news {
-    margin: 1.3em;
-  }
-  .main .content .news P {
-    width: 15em;
-    margin: 1.5em;
-  }
-  .main .content .specials {
-    margin: 1.3em;
-  }
-  .main .content .specials img {
-    width: 25rem;
-  }
-  .main .content .terms {
-    margin: auto;
-  }
-  .main .content .terms p {
-    width: 25em;
-  }
-  .main .content .terms ol {
-    width: 25em;
-  }
-}
-@media only screen and (max-width: 975px) {
-  .main {
-    border-radius: 15%;
-  }
-  .main .heading {
-    padding: 1em;
-  }
-  .main .heading h1 {
-    font-size: 2.5em;
-  }
-  .main .content {
-    justify-content: space-evenly;
-  }
-  .main .content .aboutimg {
-    margin: 0 2em 0 2em;
-    width: 15em;
-  }
-  .main .content .aboutp {
-    height: 50em;
-  }
-  .main .content .news {
-    margin: 1em;
-  }
-  .main .content .news p {
-    margin: 1em;
-    width: 10em;
-  }
-  .main .content .specials {
-    margin: 1em;
-  }
-  .main .content .specials img {
-    width: 22rem;
-  }
-}
-@media only screen and (max-width: 730px) {
-  .main {
-    border-radius: 5%;
-  }
-  .main .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main .content .mobile {
-    display: block;
-  }
-  .main .content .p {
-    display: none;
-  }
-  .main .content .aboutp {
-    height: 37em;
-  }
-  .main .content .news {
-    margin: 0.9em;
-  }
-  .main .content .news p {
-    width: 18em;
-  }
-  .main .content .specials {
-    margin: 0.9en;
-  }
-  .main .content .specials p {
-    width: 18em;
-  }
-  .main .content .specials img {
-    width: 21rem;
-  }
-  .main .content .terms p {
-    width: 15em;
-  }
-  .main .content .terms ol {
-    width: 15em;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .main {
-    margin: 20em 1em 2em 1em;
-  }
-  .main .content {
-    justify-content: inherit;
-  }
-  .main .content .terms {
-    margin: auto;
-  }
-  .main .content .terms p {
-    width: 10em;
-  }
-  .main .content .terms ol {
-    width: 10em;
-  }
+.main .content .aboutp p {
+  font-size: 1.1em;
+  padding: 1em 0.5em;
 }
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 95%;
+  padding: 0 0 1em 0;
+  font-size: 1.1em;
+}
+@media only screen and (min-width: 400px) {
+  header img {
+    width: 20em;
+  }
+  .main .content .homeimgs {
+    width: 25em;
+  }
+  .main .content .homeimgs img {
+    width: 20em;
+  }
+  .main .content .aboutimg {
+    width: 18em;
+  }
+  .main .content .aboutp p {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 530px) {
+  header img {
+    width: 30em;
+  }
+  .main .content .homeimgs {
+    width: 35em;
+  }
+  .main .content .homeimgs img {
+    width: auto;
+  }
+  .main .content .aboutimg {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 730px) {
+  header nav a {
+    font-size: 1.2em;
+  }
+  .main {
+    border-radius: 15%;
+  }
+  .main .heading h1 {
+    font-size: 3em;
+  }
+  .main .heading h3 {
+    font-size: 1.8em;
+  }
+  .main .content .mobile {
+    display: none;
+  }
+  .main .content .p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .main .content .p p {
+    padding: 0.8em;
+  }
+  .main .content .homeimgs {
+    width: 50em;
+  }
+  .main .content .aboutp {
+    width: 40em;
+  }
+}
+@media only screen and (min-width: 850px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header nav .icon {
+    display: none;
+  }
+  header nav #desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .about .aboutimg {
+    align-self: flex-start;
+    width: 20em;
+    padding: 1em;
+  }
+  .main .about .aboutp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header img {
+    width: auto;
+  }
+  .main .about .aboutimg {
+    width: auto;
+  }
+  .main .about .aboutp {
+    width: 40em;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  header nav a {
+    padding: 14px 35px;
+  }
+  .main .about {
+    padding: 1em 0;
+  }
+  .main .about .aboutp {
+    width: 60em;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  header nav a {
+    padding: 14px 45px;
+  }
 }
