@@ -1,0 +1,239 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumnalt {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  margin: auto;
+}
+@media only screen and (min-width: 400px) {
+  header img {
+    width: 20em;
+  }
+  .main .content .homeimgs {
+    width: 25em;
+  }
+  .main .content .homeimgs img {
+    width: 20em;
+  }
+  .main .content .aboutimg {
+    width: 18em;
+  }
+  .main .content .aboutp p {
+    font-size: 1.4em;
+  }
+  .main .content .specials img {
+    width: 22em;
+  }
+  .main .content .services-content .services b {
+    font-size: 1.3em;
+  }
+  .main .content .services-content .services ul {
+    width: 18em;
+    font-size: 1.2em;
+  }
+  .main .content .terms ol {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 530px) {
+  header img {
+    width: 30em;
+  }
+  .main .content .homeimgs {
+    width: 35em;
+  }
+  .main .content .homeimgs img {
+    width: auto;
+  }
+  .main .content .aboutimg {
+    width: auto;
+  }
+  .main .content .contact p {
+    font-size: 1.5em;
+  }
+  .main .content .specials img {
+    width: 30em;
+  }
+  .main .content .services-content .services ul {
+    width: 22em;
+  }
+  .main .content .terms ol {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 730px) {
+  header nav a {
+    font-size: 1.2em;
+  }
+  .main {
+    border-radius: 15%;
+  }
+  .main .heading h1 {
+    font-size: 3em;
+  }
+  .main .heading h3 {
+    font-size: 1.8em;
+  }
+  .main .content .mobile {
+    display: none;
+  }
+  .main .content .p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .main .content .p p {
+    padding: 0.8em;
+  }
+  .main .content .homeimgs {
+    width: 50em;
+  }
+  .main .content .aboutp {
+    width: 40em;
+  }
+  .main .content .specials img {
+    width: 40em;
+  }
+  .main .content .terms {
+    padding-bottom: 3em;
+  }
+  .main .content .terms ol {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header nav .icon {
+    display: none;
+  }
+  header nav #desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .about .aboutimg {
+    align-self: flex-start;
+    width: 20em;
+    padding: 1em;
+  }
+  .main .about .aboutp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+  }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 30em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 28em;
+    padding-bottom: 1em;
+  }
+  .main .service .services-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main .service .services-content .services {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .service .services-content .services ul {
+    width: 12em;
+  }
+  .main .content .terms {
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header img {
+    width: auto;
+  }
+  .main .about .aboutimg {
+    width: auto;
+  }
+  .main .about .aboutp {
+    width: 40em;
+  }
+  .main .newscontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .newscontent .news {
+    width: 20em;
+    align-self: flex-start;
+  }
+  .main .newscontent .news p b {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials {
+    width: 40em;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  .main .newscontent .specials p b {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .main .newscontent .specials img {
+    width: 35em;
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  header nav a {
+    padding: 14px 35px;
+  }
+  .main .about {
+    padding: 1em 0;
+  }
+  .main .about .aboutp {
+    width: 60em;
+  }
+}
